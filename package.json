@@ -1,0 +1,24 @@
+{
+  "name": "jogonarrativo",
+  "version": "1.0.0",
+  "description": "Jogo narrativo usando IA e JavaScript",
+  "homepage": "https://github.com/fabriciocpaixao/jogonarrativo#readme",
+  "bugs": {
+    "url": "https://github.com/fabriciocpaixao/jogonarrativo/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fabriciocpaixao/jogonarrativo.git"
+  },
+  "license": "MIT",
+  "author": "Fabricio Paixão",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
