@@ -9,6 +9,34 @@ let destinos = [
     ["Japão", "Faca Santoku Artesanal", "Hashi de Bambu", "Tempero Secreto de Ramen"]
 ]
 
+function mostrarIntroducao() {
+    console.clear()
+    console.log("")
+    console.log(`=== BEM-VINDO AO TRIP GO ===
+
+Prepare seu passaporte! Você é um viajante explorando o mundo em busca de suvenires raros. 
+Mas preste muita atenção nas regras da sua jornada:
+
+O Custo da Viagem: Cada novo destino consome 20 TripCoins.
+
+Sorte ou Revés: A estrada é imprevisível. 
+Você pode encontrar mais moedas, descobrir itens incríveis, 
+ou acabar sendo assaltado no meio do caminho!
+
+A Mochila: Guarde os suvenires que encontrar, mas cuidado com os ladrões.
+
+O Descanso: Tá com pouco dinheiro? 
+Use a opção de Descansar para recuperar alguns TripCoins.
+
+GAME OVER: Se suas TripCoins chegarem a zero, 
+sua viagem acaba imediatamente e você volta para casa a pé! rsrs
+
+Pense bem antes de cada escolha. Boa viagem!`)
+console.log("")
+console.log("")
+    prompt("Pressione [Enter] para continuar ")
+}
+
 
 function viajar() {
     tripCoins = tripCoins - 20
@@ -95,6 +123,7 @@ function terminarViagem() {
     
 
 function iniciarJogo () {
+    mostrarIntroducao()
     do {
         if (tripCoins <= 0) {
             console.log("Game Over")
