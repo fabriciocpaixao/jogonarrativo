@@ -1,4 +1,5 @@
 const prompt = require('prompt-sync')()
+const colors = require('colors')
 
 let opcao
 let tripCoins = 100
@@ -8,6 +9,29 @@ let destinos = [
     ["França", "Livro de Gastronomia Clássica", "Queijo Brie Curado", "Vinho Tinto Envelhecido"],
     ["Japão", "Faca Santoku Artesanal", "Hashi de Bambu", "Tempero Secreto de Ramen"]
 ]
+
+function inicialArt() {
+    console.clear()
+    console.log("")
+    console.log(colors.rainbow(`
+ ███████████            ███              █████████     ███████   
+░█░░░███░░░█           ░░░              ███░░░░░███  ███░░░░░███ 
+░   ░███  ░  ████████  ████  ████████  ███     ░░░  ███     ░░███
+    ░███    ░░███░░███░░███ ░░███░░███░███         ░███      ░███
+    ░███     ░███ ░░░  ░███  ░███ ░███░███    █████░███      ░███
+    ░███     ░███      ░███  ░███ ░███░░███  ░░███ ░░███     ███ 
+    █████    █████     █████ ░███████  ░░█████████  ░░░███████░  
+   ░░░░░    ░░░░░     ░░░░░  ░███░░░    ░░░░░░░░░     ░░░░░░░    
+                             ░███                                
+                             █████                               
+                            ░░░░░                                `))
+console.log("")
+console.log("")
+    prompt("Pressione [Enter] para continuar ")
+}
+
+
+
 
 function mostrarIntroducao() {
     console.clear()
@@ -123,6 +147,7 @@ function terminarViagem() {
     
 
 function iniciarJogo () {
+    inicialArt ()
     mostrarIntroducao()
     do {
         if (tripCoins <= 0) {
